@@ -1,0 +1,14 @@
+﻿{
+
+  "profiles": {
+
+    "Mvc_Implicit": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5004",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

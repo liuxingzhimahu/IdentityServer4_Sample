@@ -7,7 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API1", "API1\API1.csproj", "{C97499E6-2F86-4201-8263-5B92C4C6E64E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console_Credentials", "Console.Credentials\Console_Credentials.csproj", "{BD824A00-140B-4DC2-BC04-D554AA7BE7E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console_Credentials", "Console.Credentials\Console_Credentials.csproj", "{BD824A00-140B-4DC2-BC04-D554AA7BE7E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mvc_Hybrid", "Mvc_Hybrid\Mvc_Hybrid.csproj", "{B9F8D8BF-1A44-48D0-A0A8-B9C71CBE531F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mvc_AuthorizationCode", "Mvc_AuthorizationCode\Mvc_AuthorizationCode.csproj", "{783D31D6-B37C-4A4D-BD0E-4ADF66A8563F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mvc_Implicit", "Mvc_Implicit\Mvc_Implicit.csproj", "{E805E871-7CF2-45EB-B016-F4C61924CE4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Resourceownerpassword", "Wpf_Resourceownerpassword\Wpf_Resourceownerpassword.csproj", "{2F998E12-C0F0-4D05-AC4B-EDB689E4B56D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{BD824A00-140B-4DC2-BC04-D554AA7BE7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD824A00-140B-4DC2-BC04-D554AA7BE7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD824A00-140B-4DC2-BC04-D554AA7BE7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F8D8BF-1A44-48D0-A0A8-B9C71CBE531F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F8D8BF-1A44-48D0-A0A8-B9C71CBE531F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F8D8BF-1A44-48D0-A0A8-B9C71CBE531F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F8D8BF-1A44-48D0-A0A8-B9C71CBE531F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783D31D6-B37C-4A4D-BD0E-4ADF66A8563F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783D31D6-B37C-4A4D-BD0E-4ADF66A8563F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783D31D6-B37C-4A4D-BD0E-4ADF66A8563F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783D31D6-B37C-4A4D-BD0E-4ADF66A8563F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E805E871-7CF2-45EB-B016-F4C61924CE4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E805E871-7CF2-45EB-B016-F4C61924CE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E805E871-7CF2-45EB-B016-F4C61924CE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E805E871-7CF2-45EB-B016-F4C61924CE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F998E12-C0F0-4D05-AC4B-EDB689E4B56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F998E12-C0F0-4D05-AC4B-EDB689E4B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F998E12-C0F0-4D05-AC4B-EDB689E4B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F998E12-C0F0-4D05-AC4B-EDB689E4B56D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer4.AccessTokenValidation;
@@ -25,8 +26,9 @@ namespace API1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
             services.AddControllers();
-            services.AddAuthorization();
 
             //services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
             //.AddJwtBearer(options =>
@@ -41,7 +43,7 @@ namespace API1
                  {
                      options.RequireHttpsMetadata = false;
                      options.Authority = "http://localhost:5000";
-                     //options.ApiName = "socialnetwork";
+                     options.ApiName = "api1";
                  });
         }
 
@@ -55,8 +57,8 @@ namespace API1
 
             app.UseRouting();
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

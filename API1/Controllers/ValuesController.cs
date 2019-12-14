@@ -7,18 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API1.Controllers
 {
-    public class ValuesController : Controller
+    [Route("[controller]")]
+    [Authorize]
+    public class ValuesController : ControllerBase
     {
         public IActionResult Index()
         {
-            return new JsonResult("test");
+            return new JsonResult(from c in User.Claims select new { c.Type, c.Value });
         }
-
-        [Authorize]
-        [HttpGet]
+        
+        [HttpGet("names")]
         public IActionResult Names()
         {
-            return new JsonResult("test");
+            return new JsonResult("testNames");
         }
     }
 }

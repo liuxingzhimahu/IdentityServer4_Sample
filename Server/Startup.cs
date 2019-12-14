@@ -13,8 +13,6 @@ namespace Server
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -26,12 +24,12 @@ namespace Server
 
             services.AddIdentityServer()
                            .AddDeveloperSigningCredential()
+                           .AddTestUsers(Config.Users().ToList())
                            .AddInMemoryApiResources(Config.GetApis())
                            .AddInMemoryClients(Config.GetClients())
                            .AddInMemoryIdentityResources(Config.GetIdentityResources());
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
@@ -40,7 +38,7 @@ namespace Server
             }
 
             app.UseIdentityServer();
-
+            app.UseAuthorization();
             app.UseStaticFiles();
             app.UseRouting();
             app.UseEndpoints(endpoints =>
